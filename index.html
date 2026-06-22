@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noid OS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- WELCOME WINDOW -->
+<div class="window" id="welcome" style="top:150px; left:300px;">
+  <div class="windowheader" id="welcomeheader">
+    <div class="closebutton" id="welcomeclose"></div>
+    <p class="headertext">Welcome</p>
+    <div></div>
+  </div>
+  <div class="windowcontent">
+    <img src="./image1.jpeg">
+    <h1>Noid OS</h1>
+    <p>Welcome to my personal operating system.</p>
+    <p>Built with HTML CSS and JavaScript.</p>
+  </div>
+</div>
+
+<!-- TOP BAR -->
+<div id="top">
+  <p id="welcomeopen">Noid OS</p>
+  <p id="appStatus">☀️ Noid OS</p>
+  <p id="timeElement"></p>
+</div>
+
+<!-- DESKTOP -->
+<div id="desktopApps">
+  <div id="notesIcon" class="appIcon">
+    <img src="./image1.jpeg">
+    <p>Notes</p>
+  </div>
+
+  <div id="terminalIcon" class="appIcon">
+    <img src="./terminal.png">
+    <p>Terminal</p>
+  </div>
+
+  <div id="photosIcon" class="appIcon">
+    <img src="./pic1.png">
+    <p>Photos</p>
+  </div>
+</div>
+
+<!-- NOTES APP -->
+<div class="window" id="notes" style="display:none; top:200px; left:500px;">
+  <div class="windowheader" id="notesheader">
+    <div class="closebutton" id="notesclose"></div>
+    <p class="headertext">Notes</p>
+    <div></div>
+  </div>
+  <div class="notesWindow">
+    <div id="sidebar"></div>
+    <div id="noteText" class="noteText"></div>
+  </div>
+</div>
+
+<!-- TERMINAL APP -->
+<div class="window" id="terminal" style="display:none; top:160px; left:260px;">
+  <div class="windowheader" id="terminalheader">
+    <div class="closebutton" id="terminalclose"></div>
+    <p class="headertext">Terminal</p>
+    <div></div>
+  </div>
+  <div class="terminalWindow" id="terminalWindow">
+    <div id="terminalOutput"></div>
+    <div class="terminalLine">
+      <span class="prompt">noid@noidOS:~$</span>
+      <input type="text" id="terminalInput" autocomplete="off" spellcheck="false">
+    </div>
+  </div>
+</div>
+
+<!-- PHOTOS APP -->
+<div class="window" id="photos" style="display:none; top:180px; left:420px;">
+  <div class="windowheader" id="photosheader">
+    <div class="closebutton" id="photosclose"></div>
+    <p class="headertext">Photos</p>
+    <div></div>
+  </div>
+  <div class="photosWindow">
+    <img id="photoDisplay" src="./pic1.png">
+    <div class="photoControls">
+      <button id="photoPrev">‹ Prev</button>
+      <p id="photoCounter">1 / 10</p>
+      <button id="photoNext">Next ›</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
